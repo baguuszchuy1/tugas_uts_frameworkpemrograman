@@ -1,8 +1,5 @@
-@extends('layouts.app')
+<x-layouts.app>
 
-@section('title', 'Data Pelanggan')
-
-@section('content')
     <div class="flex items-center justify-between mb-4">
     <h1 class="text-2xl font-bold text-slate-800">Data Pelanggan</h1>
     <a href="{{ route('pelanggan.create') }}" class="bg-sky-600 hover:bg-sky-700 text-white text-sm font-medium px-4 py-2 rounded-lg">
@@ -67,4 +64,5 @@
     <div class="mt-4">
         {{ $pelanggans->links() }}
     </div>
-@endsection
+
+</x-layouts.app>
